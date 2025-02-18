@@ -1,21 +1,23 @@
 # MarketCapFetcher
 
-**TODO: Add description**
+This is the example for fetch and get response from CryptoMarketCap website
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `market_cap_fetcher` to your list of dependencies in `mix.exs`:
+Install dependencies by this command
 
-```elixir
-def deps do
-  [
-    {:market_cap_fetcher, "~> 0.1.0"}
-  ]
-end
+```
+mix deps.get
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/market_cap_fetcher>.
+## Dependencies
 
+- HTTPoison
+- JSON
+
+## Run
+
+```
+iex -S mix
+MarketCapFetcher.fetch_market_data()
+```
